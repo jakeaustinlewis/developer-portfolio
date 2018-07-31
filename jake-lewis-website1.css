@@ -1,0 +1,610 @@
+body {
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222;
+}
+
+/* Larger than mobile */
+
+@media (min-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+
+@media (min-width: 1200px) {}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.maxWidth{
+  width: 100%;
+}
+
+.maxHeight {
+  height:100%;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+#aboutMe h2 {
+  font-size: 20px;
+}
+
+#backgroundPicture {
+  background-image: url("meInTheCity.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  min-width: 200px;
+  min-height: 200px;
+  background-position-x: 27%;
+}
+
+#pictureNoteContainer h2 {
+  font-size: 22px;
+}
+
+nav {
+  background: white;
+  box-shadow: none;
+  height: 0;
+}
+
+#nameContainer {
+  margin: auto auto;
+}
+
+.container {
+  width: 95%;
+}
+
+nav ul li {
+  float: none;
+}
+
+
+.divider {
+  height: 1px;
+  overflow: hidden;
+  background-color: #e0e0e0;
+}
+
+#experience .card-content .row {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin: 0px 0px 10px 0px;
+}
+
+.cardJobTitle {
+  font-size:1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  /* width: 100%; */
+}
+
+@media (min-width: 768px) {
+  #aboutMe h2 {
+    font-size: 40px;
+  }
+  #backgroundPicture {
+    background-image: url("meInTheCity.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    min-width: 200px;
+    min-height: 200px;
+  }
+
+  .parallax {
+    /* Set a specific height */
+    /* min-height: 300px;  */
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+}
+  #pictureNoteContainer h2 {
+    font-size: 3.56rem;
+  }
+  .cardJobTitle {
+    font-size: 24px;
+    font-weight: bold;
+    /* width: 100%; */
+  }
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.fullHeight {
+  height: 100%;
+}
+
+.card .card-action {
+  background-color: inherit;
+  border-top: 1px solid rgba(160, 160, 160, 0.2);
+  position: relative;
+  padding: 16px 24px;
+  height: auto;
+}
+
+/* #slide-out { */
+  /* width: 190px; */
+  /* height: 100%;
+  z-index: 1;
+  margin: 0px;
+  padding: 0px;
+} */
+
+.row .col {
+  padding: 0;
+}
+
+.user-view>div {
+  background-color: #fafafa;
+}
+
+#navTop {
+  height: 160px;
+  display: flex;
+  align-items: center;
+}
+
+#navTop a.active {
+  border-left: 0px;
+}
+
+.teal-text {
+  color: #009688;
+  font-size: 24px;
+}
+
+.green-text {
+  color: #009788;
+  font-size: 24px;
+}
+
+.brown-text {
+  color: #33241c;
+  font-size: 24px;
+}
+
+#navBottom {
+  background-color: #fff;
+  /* height: 100%; */
+}
+
+#navBottom a {
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  /* font-weight: 300; */
+  display: flex;
+  align-items: center;
+  padding-left: 0px;
+  /* border: 0px; */
+}
+
+#navBottom a:hover {
+  background-color: #fafafa;
+}
+
+#navBottom a.active {
+  background-color: #fafafa;
+}
+
+
+
+#navBottom i {
+  padding: 0px 15px;
+}
+
+#navBottom span {
+  margin-left: 10px;
+}
+
+.navAboutMe i {
+  color: #009788;
+}
+
+.navAboutMe a:hover {
+  border-left: solid #009788 10px;
+  color: #009788;
+}
+
+.navAboutMe a.active {
+  border-left: solid #009788 10px;
+  color: #009788;
+}
+
+.navExperience i {
+  color: #02bcd7;
+}
+
+.navExperience a:hover {
+  border-left: solid #02bcd7 10px;
+  color: #02bcd7;
+}
+
+.navExperience a.active {
+  border-left: solid #02bcd7 10px;
+  color: #02bcd7;
+}
+
+.navProjects i {
+  color: #3f4db8;
+}
+
+.navProjects a:hover {
+  border-left: solid #3f4db8 10px;
+  color: #3f4db8;
+}
+
+.navProjects a.active {
+  border-left: solid #3f4db8 10px;
+  color: #3f4db8;
+}
+
+.navSkills i {
+  color: #9c1eb2;
+}
+
+.navSkills a:hover {
+  border-left: solid #9c1eb2 10px;
+  color: #9c1eb2;
+}
+
+.navSkills a.active {
+  border-left: solid #9c1eb2 10px;
+  color: #9c1eb2;
+}
+
+.navAwards i {
+  color: #ec1561;
+}
+
+.navAwards a:hover {
+  border-left: solid #ec1561 10px;
+  color: #ec1561;
+}
+
+.navAwards a.active {
+  border-left: solid #ec1561 10px;
+  color: #ec1561;
+}
+
+.navEducation i {
+  color: #f7412c;
+}
+
+.navEducation a:hover {
+  border-left: solid #f7412c 10px;
+  color: #f7412c;
+}
+
+.navEducation a.active {
+  border-left: solid #f7412c 10px;
+  color: #f7412c;
+}
+
+.navContact i {
+  color: #fe9900;
+}
+
+.navContact a:hover {
+  border-left: solid #fe9900 10px;
+  color: #fe9900;
+}
+
+.navContact a.active {
+  border-left: solid #fe9900 10px;
+  color: #fe9900;
+}
+
+.navResume i {
+  color: #cede20;
+}
+
+.navResume a:hover {
+  border-left: solid #cede20 10px;
+  color: #cede20;
+}
+
+.navResume a.active {
+  border-left: solid #cede20 10px;
+  color: #cede20;
+}
+
+.slideIn {
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.slideIn a {
+  width: 0px;
+  left: -200px;
+  /* overflow-x: hidden; */
+  transition: 0.5s;
+}
+
+.slideIn li {
+  width: 0px;
+  left: -200px;
+  /* overflow-x: hidden; */
+  transition: 0.5s;
+} 
+
+.slideOut {
+  width: 190px; 
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.slideOut a {
+  width: 190px; 
+  left: 0px;
+  overflow-x: hidden;
+  transition: 0.3s;
+  
+}
+
+.slideOut li {
+  width: 190px; 
+  left: 0px;
+  overflow-x: hidden;
+  transition: 0.3s;
+}
+
+
+
+
+
+#pictureNoteContainer {
+  padding: 22.5px 22.5px;
+}
+
+.pageTitleBackground {
+  height: 108px;
+  width: 100%;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 992px) {
+  .pageTitleBackground {
+    height: 84px;
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.pageTitle {
+  height: 108px;
+  width: 100%;
+  margin: 0px;
+}
+
+@media screen and (max-width: 992px) {
+  .pageTitle {
+    height: 84px;
+    width: 100%;
+    margin: 0px;
+  }
+}
+
+.fontSize {
+  font-size: 50px;
+}
+
+#aboutMeTitleBackground {
+  background-color: #009788;
+}
+
+#experienceTitleBackground {
+  background-color: #02bcd7;
+}
+
+#projectsTitleBackground {
+  background-color: #3f4db8
+}
+
+#skillsTitleBackground {
+  background-color: #9c1eb2;
+}
+
+#awardsTitleBackground {
+  background-color: #ec1561;
+}
+
+#educationTitleBackground {
+  background-color: #f7412c;
+}
+
+#contactTitleBackground {
+  background-color: #fe9900;
+}
+
+#resumeTitleBackground {
+  background-color: #cede20;
+}
+
+#overlay {
+  /* position: fixed; Sit on top of the page content */
+  display: none;
+  /* Hidden by default */
+  width: 100%;
+  /* Full width (cover the whole page) */
+  height: 100%;
+  /* Full height (cover the whole page) */
+  background-color: rgba(0, 0, 0, 0.3);
+  /* Black background with opacity */
+  z-index: 2;
+  /* Specify a stack order in case you're using a different order for other elements */
+}
+
+#aboutMe blockquote {
+  border-left: 10px solid #009788;
+  margin-left: 25px;
+}
+
+.subTitle {
+  margin: 0px 0px 0px 40px;
+}
+
+.brandLogo {
+  width: 100px;
+  height: 100px;
+}
+
+/* #experience span {
+  width: 100px;
+  height: 100px;
+} */
+
+.cardFlex {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 815px;
+}
+.card.medium {
+  width: 400px;
+}
+
+.margin0{
+  margin:0px;
+}
+
+
+.cardImg {
+  object-fit: cover;
+}
+
+@media screen and (max-width: 992px) {
+  .card {
+    width: 90%;
+  }
+}
+
+.flexCardTop {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.flexEducationTitle {
+  display: flex;
+}
+
+.cardtitleSpacing {
+  margin-left: 10px;
+}
+
+.cardBusinessTitle {
+  font-size: 20px;
+  /* text-decoration: underline;
+  text-decoration-color: #02bcd7; */
+  ;
+}
+
+#pushRight {
+  width: 190px;
+  height: 100%;
+  position: relative;
+  display: block;
+  z-index: 2;
+}
+
+main {
+  margin-left: 190px;
+  background-color: #f3f6fa;
+}
+
+@media screen and (max-width: 992px) {
+  background-color: #f3f6fa;
+}
+
+#form-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px;
+  font-size: 16px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.email {
+  color: black;
+}
+
+.title {
+  margin: 0px 0px 25px 0px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.red {
+  color: #e31a6d;
+}
+
+.box {
+  width: 10%;
+  height: 10%;
+  /* border: .02px solid rgba(211,211,211,5); */
+}
+
+#box-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* grid-gap: 20px; */
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
