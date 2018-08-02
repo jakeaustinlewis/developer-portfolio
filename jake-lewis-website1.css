@@ -80,8 +80,14 @@ nav {
   margin: auto auto;
 }
 
+
+#nameContainer .name{
+  font-size: 24px;
+}
+
 .container {
   width: 95%;
+  padding: 0 1.5rem;
 }
 
 nav ul li {
@@ -112,6 +118,7 @@ nav ul li {
   #aboutMe h2 {
     font-size: 40px;
   }
+
   #backgroundPicture {
     background-image: url("meInTheCity.jpg");
     background-size: cover;
@@ -131,12 +138,23 @@ nav ul li {
   #pictureNoteContainer h2 {
     font-size: 3.56rem;
   }
+
   .cardJobTitle {
     font-size: 24px;
     font-weight: bold;
     /* width: 100%; */
   }
+
+  #experience .container{
+    width: 815px;
+  }
+
+  #education .container {
+    width: 815px;
+  }
 }
+
+
 
 .fullWidth {
   width: 100%;
@@ -161,9 +179,12 @@ nav ul li {
   margin: 0px;
   padding: 0px;
 } */
-
 .row .col {
-  padding: 0;
+  padding: 0px;
+}
+.cardMargin {
+    margin-right: 1.5rem;
+
 }
 
 .user-view>div {
@@ -182,17 +203,11 @@ nav ul li {
 
 .teal-text {
   color: #009688;
-  font-size: 24px;
 }
 
-.green-text {
-  color: #009788;
-  font-size: 24px;
-}
 
 .brown-text {
   color: #33241c;
-  font-size: 24px;
 }
 
 #navBottom {
@@ -234,13 +249,13 @@ nav ul li {
 }
 
 .navAboutMe a:hover {
-  border-left: solid #009788 10px;
-  color: #009788;
+  border-left: solid #009688 10px;
+  color: #009688;
 }
 
 .navAboutMe a.active {
-  border-left: solid #009788 10px;
-  color: #009788;
+  border-left: solid #009688 10px;
+  color: #009688;
 }
 
 .navExperience i {
@@ -377,6 +392,7 @@ nav ul li {
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  background-color: black;
 }
 
 .slideOut a {
@@ -508,26 +524,56 @@ nav ul li {
   justify-content: center;
 }
 
-.card {
+/* .card {
   width: 815px;
-}
-.card.medium {
+} */
+/* .card.medium {
   width: 400px;
-}
+} */
 
 .margin0{
   margin:0px;
 }
 
 
-.cardImg {
+/* .cardImg {
   object-fit: cover;
+} */
+
+.card.medium {
+  width: 100%;
+}
+.card.medium .card-image {
+  height: 240px;
+  width: auto;
+}
+
+.imageHolder {
+  width: 400px;
+  height: 400px;
+  line-height: 400px;
+}
+.cardImgg img {
+  max-width: 100%;
+  max-height:100%;
+  display: inline-block; /* Instead of display: block; */
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+.card .card-image img {
+  object-fit: cover;
+}
+
+.card.medium {
+  height: 480px;
 }
 
 @media screen and (max-width: 992px) {
   .card {
-    width: 90%;
+    width: 100%;
   }
+
 }
 
 .flexCardTop {

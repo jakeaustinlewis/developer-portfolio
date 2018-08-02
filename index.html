@@ -105,6 +105,8 @@
                 <i id="hamburgerButton" class="material-icons hide-on-large-only hide-on-med-and-up">menu</i>
             </a>
 
+            
+
         </div>
 
         <!-- sidebar -->
@@ -200,7 +202,7 @@
                 </section>
 
                 <!-- IBM Card -->
-                <div class="cardFlex">
+                <div class="container">
                     <div class="card">
                         <div class="card-content">
                             <!-- <div class="col"> -->
@@ -245,11 +247,11 @@
                             <!-- <a href="#">This is a link</a> -->
                         </div>
                     </div>
-                </div>
 
 
-                <!-- Applied Research Labs Card-->
-                <div class="cardFlex">
+
+                    <!-- Applied Research Labs Card-->
+                    <!-- <div class="cardFlex"> -->
                     <div class="card">
                         <div class="card-content">
 
@@ -295,11 +297,11 @@
                             <!-- <a href="#">This is a link</a> -->
                         </div>
                     </div>
-                </div>
 
 
-                <!-- University of Texas Research-->
-                <div class="cardFlex">
+
+                    <!-- University of Texas Research-->
+                    <!-- <div class="cardFlex"> -->
                     <div class="card">
                         <div class="card-content">
 
@@ -347,6 +349,7 @@
                         </div>
                     </div>
                 </div>
+
             </section>
 
             <section id="projects" class="scrollspy">
@@ -357,17 +360,23 @@
                 <!-- Jake Lewis Photography -->
                 <div class="container">
                     <div class="row">
-                        <div class="col s12 m6 l4">
+                        <div class="col s12 m6 l4 cardMargin">
                             <div class="card medium">
                                 <div class="cardImg card-image waves-effect waves-block waves-light">
-                                    <img class="activator" src="camera.jpg" alt="camera">
+                                    <img class="activator fullHeight" src="camera.jpg" alt="camera">
                                 </div>
-                                <span class="card-title activator">Jake Lewis Photography</span>
+
 
                                 <div class="card-content">
+                                    <span class="card-title activator teal-text">Jake Lewis Photography</span>
+
                                     <p>A website that fetches the Flickr API to showcase my previously taken photos and my web
                                         development abilities.
                                     </p>
+                                </div>
+
+                                <div class="card-action">
+                                    <a href="http://jakelewis-photography.surge.sh/">Jake Lewis Photography</a>
                                 </div>
 
                                 <div class="card-reveal">
@@ -377,40 +386,35 @@
                                     </span>
                                     <ul>
                                         <li>
-                                            <strong>Vanilla JavaScript</strong> (no framework)
+                                            <b>• Vanilla JavaScript</b> (no framework)
                                         </li>
 
                                         <li>
-                                            <strong>Materialize CSS</strong> frontend
+                                            <b>• Materialize CSS</b> frontend
                                         </li>
 
                                         <li>
-                                            <strong>Fetched Flickr API</strong> via AJAX
+                                            <b>• Fetched Flickr API</b> via AJAX
                                         </li>
 
                                     </ul>
 
                                 </div>
 
-                                <div class="card-action">
-                                    <a href="http://jakelewis-photography.surge.sh/">Jake Lewis Photography</a>
-                                </div>
-
                             </div>
                         </div>
 
 
-
                         <!-- Phlebor App -->
-
-                        <div class="col s12 m6 l4">
+                        <div class="col s12 m6 l4 cardMargin">
                             <div class="card medium">
                                 <div class="cardImg card-image waves-effect waves-block waves-light">
-                                    <img class="activator" src="camera.jpg" alt="camera">
+                                    <img class="activator" src="Phlebor_frontpage.png" alt="Phlebor Front Page">
                                 </div>
-                                <span class="card-title activator">Phlebor</span>
+
 
                                 <div class="card-content">
+                                    <span class="card-title activator teal-text">Phlebor</span>
                                     <p>A full-stack CRUD application that allows dehydrated clientele to request a phlebotomist
                                         to drive to their location and conduct IVs.
                                     </p>
@@ -424,18 +428,19 @@
                                     <ul>
                                         <li>
 
-                                            <strong>Vanilla JavaScript</strong> (no framework)
+                                            <b>• Vanilla JavaScript</b> (no framework)
                                         </li>
 
                                         <li>
-                                            <strong>Bootstrap CSS</strong> frontend
+                                            <b>• Bootstrap CSS</b> frontend
                                         </li>
 
                                         <li>
-                                            <strong>Node.js</strong> via AJAX
+                                            <b>• Node.js</b> via AJAX
                                         </li>
+
                                         <li>
-                                            <strong>EJS</strong> 
+                                            <b>• EJS</b>
                                         </li>
 
                                     </ul>
@@ -472,14 +477,32 @@
                     <h3 class="subTitle">Education</h3>
                 </section>
 
-                <!--The University of Texas-->
-                <div class="cardFlex">
+
+                <div class="container">
+                    <!--Galvanize-->
                     <div class="card">
                         <div class="card-content">
+                            <div class="flexEducationTitle">
+                                <img class="brandLogo hide-on-small-only" src="https://media.licdn.com/dms/image/C4E0BAQG1D1RHEvbQZQ/company-logo_400_400/0?e=1541030400&v=beta&t=V2AIcy5Djs2rLFVFpQl-vTMas0UOqiZAVqCVvDYFI7w"
+                                    alt="Galvanize">
 
+                                <section class="cardtitleSpacing">
+                                    <div class="cardJobTitle">Galvanize</div>
+                                    <div class="cardBusinessTitle">Certification in Full-Stack Development</div>
+                                    <p>2018</p>
+                                </section>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!--The University of Texas-->
+                    <div class="card">
+                        <div class="card-content">
                             <div class="flexEducationTitle">
 
-                                <img class="brandLogo" src="https://media.licdn.com/dms/image/C4E0BAQEd7gpnLpqU8w/company-logo_400_400/0?e=2128291200&v=beta&t=ky-u1fAflH9ZGmKB1DVJVE7y8FwdTHMCLJpa1YyE568"
+                                <img class="brandLogo hide-on-small-only" src="https://media.licdn.com/dms/image/C4E0BAQEd7gpnLpqU8w/company-logo_400_400/0?e=2128291200&v=beta&t=ky-u1fAflH9ZGmKB1DVJVE7y8FwdTHMCLJpa1YyE568"
                                     alt="University of Texas">
 
                                 <section class="cardtitleSpacing">
@@ -492,14 +515,14 @@
 
                         </div>
                     </div>
-                </div>
 
-                <!--Louisiana State University-->
-                <div class="cardFlex">
+
+                    <!--Louisiana State University-->
+                    <!-- <div class="cardFlex"> -->
                     <div class="card">
                         <div class="card-content">
                             <div class="flexEducationTitle">
-                                <img class="brandLogo" src="https://media.licdn.com/dms/image/C4E0BAQE_rxdFlHND6A/company-logo_400_400/0?e=2131920000&v=beta&t=7wst3CByBSSc1lU5PYhv_-CnPWZJDGxA0bcmcUECJ04"
+                                <img class="brandLogo hide-on-small-only" src="https://media.licdn.com/dms/image/C4E0BAQE_rxdFlHND6A/company-logo_400_400/0?e=2131920000&v=beta&t=7wst3CByBSSc1lU5PYhv_-CnPWZJDGxA0bcmcUECJ04"
                                     alt="Louisiana State University">
 
                                 <section class="cardtitleSpacing">
@@ -512,6 +535,10 @@
 
                         </div>
                     </div>
+
+
+
+
                 </div>
 
 

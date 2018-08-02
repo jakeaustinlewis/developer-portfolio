@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function createOverlay() {
         document.getElementById("overlay").style.display = "block";
     }
-    // instance.isFixed;
+
 
     function sideNavInstances() {
         // var instance = M.Sidenav.getInstance(elem);
@@ -39,39 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
         let sideNavInstances = M.Sidenav.init(sideNavElems, sideNavOptions);
     }
     let navBottom=document.getElementById("navBottom");
-    // navBottom.addEventListener('click', function (e) {
-    //     e.preventDefault();
-    // });
 
 
 });
 
-
-// let boxContainer = document.getElementById('box-container');
-
-
-// function createBox() {
-//     for (let i = 0; i < 1000; i++) {
-//         let square = document.createElement("div");
-//         square.classList.add('box');
-//         boxContainer.append(square); //adds sqaures to the "square" parents element
-
-//     }
-
-// }
-
-// createBox();
-
-// boxContainer.addEventListener('mouseover', mouseHover);
-
-// function mouseHover() {
-//     console.log('hover');
-//     event.preventDefault();
-//     transparency();
-// }
-
-
-// function transparency() {
-//     event.target.style.backgroundColor= "rgb(0, 0, 0, .1)";
-
-// }
