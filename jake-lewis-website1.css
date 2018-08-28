@@ -34,7 +34,9 @@ body {
   height: 100%;
 }
 
-
+.table-of-contents li{
+  padding:0px;
+}
 
 .maxWidth{
   width: 100%;
@@ -43,13 +45,22 @@ body {
 .maxHeight {
   height:100%;
 }
+.m-0{
+  margin: 0px;
+}
 
 .d-flex {
   display: flex;
 }
 
+
+
 .justify-content-center {
   justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
 }
 
 #aboutMe h2 {
@@ -57,7 +68,7 @@ body {
 }
 
 #backgroundPicture {
-  background-image: url("meInTheCity.jpg");
+  background-image: url("static/linkedInPicture.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -107,6 +118,22 @@ nav ul li {
   margin: 0px 0px 10px 0px;
 }
 
+#skills h4 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin: 0px 0px 10px 0px;
+}
+
+
+.educationCards {
+  border-bottom:1px solid #ddd;
+  padding-bottom: 10px;
+  margin: 0px 0px 10px 0px;
+}
+
+.card {
+  margin-bottom: 50px;
+}
 .cardJobTitle {
   font-size:1.25rem;
   font-weight: bold;
@@ -120,7 +147,7 @@ nav ul li {
   }
 
   #backgroundPicture {
-    background-image: url("meInTheCity.jpg");
+    background-image: url("static/linkedInPicture.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -134,7 +161,7 @@ nav ul li {
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-}
+  }
   #pictureNoteContainer h2 {
     font-size: 3.56rem;
   }
@@ -144,15 +171,21 @@ nav ul li {
     font-weight: bold;
     /* width: 100%; */
   }
+}
 
-  #experience .container{
-    width: 815px;
+@media (min-width: 992px) {
+
+  #experience .container {
+    max-width: 815px;
   }
 
   #education .container {
-    width: 815px;
+    max-width: 815px;
   }
+
+
 }
+
 
 
 
@@ -163,6 +196,10 @@ nav ul li {
 .fullHeight {
   height: 100%;
 }
+
+/* .minWidth {
+  width: 170px;
+} */
 
 .card .card-action {
   background-color: inherit;
@@ -184,6 +221,7 @@ nav ul li {
 }
 .cardMargin {
     margin-right: 1.5rem;
+    padding: 0 .75rem;
 
 }
 
@@ -454,35 +492,35 @@ nav ul li {
   font-size: 50px;
 }
 
-#aboutMeTitleBackground {
+.aboutMeColor {
   background-color: #009788;
 }
 
-#experienceTitleBackground {
+.experienceColor {
   background-color: #02bcd7;
 }
 
-#projectsTitleBackground {
+.projectsColor {
   background-color: #3f4db8
 }
 
-#skillsTitleBackground {
+.skillsColor {
   background-color: #9c1eb2;
 }
 
-#awardsTitleBackground {
+.awardsColor {
   background-color: #ec1561;
 }
 
-#educationTitleBackground {
+.educationColor {
   background-color: #f7412c;
 }
 
-#contactTitleBackground {
+.contactColor {
   background-color: #fe9900;
 }
 
-#resumeTitleBackground {
+.resumeColor {
   background-color: #cede20;
 }
 
@@ -512,7 +550,26 @@ nav ul li {
 .brandLogo {
   width: 100px;
   height: 100px;
+  object-fit: contain;
 }
+
+.skillsPicture {
+  max-width: 100%;
+  height: 125px;
+  object-fit: contain;
+  padding: 10px;
+  transition: transform .2s;
+  margin-bottom: 10px;
+  /* display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0px; */
+}
+
+.skillsPicture:hover {
+  transform: scale(1.5);/* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
 
 /* #experience span {
   width: 100px;

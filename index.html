@@ -14,13 +14,15 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 
+    <!-- CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="jake-lewis-website1.css">
-
-
-
-
-
 
 
 </head>
@@ -28,8 +30,8 @@
 <body>
     <div class="row">
         <!-- <nav> -->
-        <div class="col s12 m4 l2 fullHeight">
-            <ul id="slide-out" class="navbar fixed hide-on-small-only table-of-contents z-depth-2 col s12 m4 l2 fullHeight">
+        <div class="col s12 m3 l2 fullHeight">
+            <ul id="slide-out" class="navbar fixed hide-on-small-only table-of-contents z-depth-2 col s12 m3 l2 fullHeight">
                 <li>
                     <div class="user-view">
                         <div id="navTop" class="background">
@@ -105,8 +107,6 @@
                 <i id="hamburgerButton" class="material-icons hide-on-large-only hide-on-med-and-up">menu</i>
             </a>
 
-            
-
         </div>
 
         <!-- sidebar -->
@@ -169,7 +169,7 @@
 
         <!-- </nav> -->
 
-        <main class="col s12 m8 l10">
+        <main class="col s12 m9 l10">
 
             <section id="backgroundPicture" class="fontSize scrollspy">
                 <div id="overlay">
@@ -182,69 +182,84 @@
             </section>
 
             <section id="aboutMe" class="scrollspy">
-                <section id="aboutMeTitleBackground" class="white-text pageTitleBackground">
+                <section id="" class="white-text pageTitleBackground aboutMeColor">
                     <h3 class="subTitle">About Me</h3>
                 </section>
 
                 <section class="container">
-                    <blockquote>
-                        <h2>Ambitious and goal-oriented Full Stack developer. Enthusiastic about building impressive software
-                            and solving thought-provoking problems.
-                        </h2>
-                    </blockquote>
+                    <div data-aos="fade-left">
+                        <blockquote>
+                            <h2>Ambitious and goal-oriented Full Stack developer. Enthusiastic about building impressive software
+                                and solving thought-provoking problems.
+
+                                <!-- Full-stack developer with a bachelors in Mechanical Engineering and a certificate 
+                            in Material Science from UT Austin. I interned at several companies, taking on roles from 3D modeling and prototyping to project 
+                            management and proposal writing. I also served as a research assistant in a lab that fabricated and tested materials used as 
+                            heatshields for reentry vehicles. Upon graduation, I worked as a consultant in the cognitive space at IBM focused on projects that 
+                            involved Watson offerings to support client endeavors and the global team. Working closely with development teams gave me an 
+                            appreciation for the fast-paced environments and thought-provoking challenges developers solve. The work I did there made me want 
+                            a career change, so I enrolled in the web-development immersive program at Galvanize. I'm Jake Lewis, and I aim to be part of a company filled 
+                            with people that are driven, curious, and inherently want to positively impact the world around us, both in the office and out. -->
+                            </h2>
+                        </blockquote>
+                    </div>
                 </section>
 
             </section>
 
             <section id="experience" class="scrollspy">
-                <section id="experienceTitleBackground" class="white-text pageTitleBackground">
+                <section id="" class="white-text pageTitleBackground experienceColor">
                     <h3 class="subTitle">Experience</h3>
                 </section>
 
                 <!-- IBM Card -->
+
+
                 <div class="container">
-                    <div class="card">
-                        <div class="card-content">
-                            <!-- <div class="col"> -->
-                            <div class="flexCardTop row hide-on-small-only">
+                    <div data-aos="flip-up">
+                        <div class="card">
+                            <div class="card-content">
+                                <!-- <div class="col"> -->
+                                <div class="flexCardTop row hide-on-small-only">
 
-                                <img class="brandLogo" src="https://media.licdn.com/dms/image/C560BAQGoKONYGHeNOg/company-logo_400_400/0?e=2128291200&v=beta&t=0HcRCOUPvId_OpoQuZG7cvhLujtrYEKYEYvZMhKdnTA"
-                                    alt="IBM">
-                                <section class="cardtitleSpacing">
-                                    <div class="cardJobTitle">Cognitive Business Transformations Consultant</div>
-                                    <div class="cardBusinessTitle">Internation Business Machines</div>
-                                </section>
+                                    <img class="brandLogo" src="https://media.licdn.com/dms/image/C560BAQGoKONYGHeNOg/company-logo_400_400/0?e=2128291200&v=beta&t=0HcRCOUPvId_OpoQuZG7cvhLujtrYEKYEYvZMhKdnTA"
+                                        alt="IBM">
+                                    <section class="cardtitleSpacing">
+                                        <div class="cardJobTitle">Cognitive Business Transformations Consultant</div>
+                                        <div class="cardBusinessTitle brown-text">Internation Business Machines</div>
+                                    </section>
 
-                            </div>
-
-                            <div class="hide-on-med-and-up">
-                                <div class="row maxWidth">
-                                    <div class="col s12 d-flex justify-content-center">
-                                        <img class="brandLogo" src="https://media.licdn.com/dms/image/C560BAQGoKONYGHeNOg/company-logo_400_400/0?e=2128291200&v=beta&t=0HcRCOUPvId_OpoQuZG7cvhLujtrYEKYEYvZMhKdnTA"
-                                            alt="IBM">
-                                    </div>
-                                    <div class="col s12 d-flex justify-content-center">
-                                        <div class="cardBusinessTitle">Internation Business Machines</div>
-                                    </div>
                                 </div>
-                                <div class="cardJobTitle">Cognitive Business Transformations Consultant</div>
+
+                                <div class="hide-on-med-and-up">
+                                    <div class="row maxWidth">
+                                        <div class="col s12 d-flex justify-content-center">
+                                            <img class="brandLogo" src="https://media.licdn.com/dms/image/C560BAQGoKONYGHeNOg/company-logo_400_400/0?e=2128291200&v=beta&t=0HcRCOUPvId_OpoQuZG7cvhLujtrYEKYEYvZMhKdnTA"
+                                                alt="IBM">
+                                        </div>
+                                        <div class="col s12 d-flex justify-content-center">
+                                            <div class="cardBusinessTitle brown-text">Internation Business Machines</div>
+                                        </div>
+                                    </div>
+                                    <div class="cardJobTitle">Cognitive Business Transformations Consultant</div>
+                                </div>
+
+                                <!-- <span class="card-title">Cognitive Business Transformations Consultant</span> -->
+                                <ul style="list-style-type:disc">
+                                    <li>• Assisted in the configuration of a Watson Conversation Service chatbot for NetApp’s
+                                        technical support organization</li>
+                                    <li> • Supported the Global Team in building a resource wiki by collecting and preparing assets
+                                        that align to IBM’s cognitive offerings</li>
+                                    <li>• Facilitated Watson Process Reengineering design thinking sessions with Johnson & Johnson
+                                        and Walgreens account teams</li>
+                                    <li>• Underwent extensive datascience training through internal modules, Udacity, and Datacamp</li>
+
+                                </ul>
                             </div>
-
-                            <!-- <span class="card-title">Cognitive Business Transformations Consultant</span> -->
-                            <ul style="list-style-type:disc">
-                                <li>• Assisted in the configuration of a Watson Conversation Service chatbot for NetApp’s technical
-                                    support organization</li>
-                                <li> • Supported the Global Team in building a resource wiki by collecting and preparing assets
-                                    that align to IBM’s cognitive offerings</li>
-                                <li>• Facilitated Watson Process Reengineering design thinking sessions with Johnson & Johnson
-                                    and Walgreens account teams</li>
-                                <li>• Underwent extensive datascience training through internal modules, Udacity, and Datacamp</li>
-
-                            </ul>
-                        </div>
-                        <div class="card-action">
-                            <p>Feb 2017 - March 2018</p>
-                            <!-- <a href="#">This is a link</a> -->
+                            <div class="card-action">
+                                <p>Feb 2017 - March 2018</p>
+                                <!-- <a href="#">This is a link</a> -->
+                            </div>
                         </div>
                     </div>
 
@@ -252,205 +267,268 @@
 
                     <!-- Applied Research Labs Card-->
                     <!-- <div class="cardFlex"> -->
-                    <div class="card">
-                        <div class="card-content">
+                    <div data-aos="flip-up">
+                        <div class="card">
+                            <div class="card-content">
 
-                            <div class="flexCardTop row hide-on-small-only">
+                                <div class="flexCardTop row hide-on-small-only">
 
-                                <img class="brandLogo" src="https://media.licdn.com/dms/image/C560BAQE-uQ52BrVbYA/company-logo_400_400/0?e=2128291200&v=beta&t=cJFS46LW1YV4WFkiTGHV5l5Ze4s5e6pMW17IvHUdbV0"
-                                    alt="ARL">
+                                    <img class="brandLogo" src="https://media.licdn.com/dms/image/C560BAQE-uQ52BrVbYA/company-logo_400_400/0?e=2128291200&v=beta&t=cJFS46LW1YV4WFkiTGHV5l5Ze4s5e6pMW17IvHUdbV0"
+                                        alt="ARL">
 
-                                <section class="cardtitleSpacing">
-                                    <div class="cardJobTitle">Research Engineering/Scientist Associate</div>
-                                    <div class="cardBusinessTitle">Applied Research Labs</div>
-                                </section>
-
-                            </div>
-
-                            <div class="hide-on-med-and-up">
-                                <div class="row maxWidth">
-                                    <div class="col s12 d-flex justify-content-center">
-                                        <img class="brandLogo" src="https://media.licdn.com/dms/image/C560BAQE-uQ52BrVbYA/company-logo_400_400/0?e=2128291200&v=beta&t=cJFS46LW1YV4WFkiTGHV5l5Ze4s5e6pMW17IvHUdbV0"
-                                            alt="ARL">
-                                    </div>
-                                    <div class="col s12 d-flex justify-content-center">
+                                    <section class="cardtitleSpacing">
+                                        <div class="cardJobTitle">Research Engineering/Scientist Associate</div>
                                         <div class="cardBusinessTitle">Applied Research Labs</div>
-                                    </div>
+                                    </section>
+
                                 </div>
-                                <div class="cardJobTitle">Research Engineering/Scientist Associate</div>
+
+                                <div class="hide-on-med-and-up">
+                                    <div class="row maxWidth">
+                                        <div class="col s12 d-flex justify-content-center">
+                                            <img class="brandLogo" src="https://media.licdn.com/dms/image/C560BAQE-uQ52BrVbYA/company-logo_400_400/0?e=2128291200&v=beta&t=cJFS46LW1YV4WFkiTGHV5l5Ze4s5e6pMW17IvHUdbV0"
+                                                alt="ARL">
+                                        </div>
+                                        <div class="col s12 d-flex justify-content-center">
+                                            <div class="cardBusinessTitle">Applied Research Labs</div>
+                                        </div>
+                                    </div>
+                                    <div class="cardJobTitle">Research Engineering/Scientist Associate</div>
+                                </div>
+
+                                <!-- <span class="card-title">Cognitive Business Transformations Consultant</span> -->
+                                <ul style="list-style-type:disc">
+                                    <li>• Brainstormed, designed, and 3D modeled structural systems used on a sonar research
+                                        facility using SolidWorks</li>
+                                    <li>• Conducted finite element analysis (FEA) on existing and conceptual parts via COMSOL
+                                    </li>
+                                    <li>• Utilized rapid prototyping techniques in order to produce testing equipment to improve
+                                        underwater acoustic analysis</li>
+                                </ul>
+
+
                             </div>
-
-                            <!-- <span class="card-title">Cognitive Business Transformations Consultant</span> -->
-                            <ul style="list-style-type:disc">
-                                <li>• Brainstormed, designed, and 3D modeled structural systems used on a sonar research facility
-                                    using SolidWorks</li>
-                                <li>• Conducted finite element analysis (FEA) on existing and conceptual parts via COMSOL
-                                </li>
-                                <li>• Utilized rapid prototyping techniques in order to produce testing equipment to improve
-                                    underwater acoustic analysis</li>
-                            </ul>
-
-
-                        </div>
-                        <div class="card-action">
-                            <p>May 2015 - December 2016</p>
-                            <!-- <a href="#">This is a link</a> -->
+                            <div class="card-action">
+                                <p>May 2015 - December 2016</p>
+                                <!-- <a href="#">This is a link</a> -->
+                            </div>
                         </div>
                     </div>
+
+
+
+
+
+
+
+                    <!-- Texas Research Institute -->
+
+                    <!-- Applied Research Labs Card-->
+                    <!-- <div class="cardFlex"> -->
+                    <div data-aos="flip-up">
+                        <div class="card">
+                            <div class="card-content">
+
+                                <div class="flexCardTop row hide-on-small-only">
+
+                                    <img class="brandLogo" src="https://tri-intl.com/wp-content/uploads/2017/08/TRI-new-logoV2.png" alt="TRI">
+
+                                    <section class="cardtitleSpacing">
+                                        <div class="cardJobTitle">Mechanical Engineer Intern</div>
+                                        <div class="cardBusinessTitle">Texas Research Institute</div>
+                                    </section>
+
+                                </div>
+
+                                <div class="hide-on-med-and-up">
+                                    <div class="row maxWidth">
+                                        <div class="col s12 d-flex justify-content-center">
+                                            <img class="brandLogo" src="https://tri-intl.com/wp-content/uploads/2017/08/TRI-new-logoV2.png" alt="TRI">
+                                        </div>
+                                        <div class="col s12 d-flex justify-content-center">
+                                            <div class="cardBusinessTitle">Texas Research Institute</div>
+                                        </div>
+                                    </div>
+                                    <div class="cardJobTitle">Mechanical Engineer Intern</div>
+                                </div>
+
+                                <!-- <span class="card-title">Cognitive Business Transformations Consultant</span> -->
+                                <ul style="list-style-type:disc">
+                                    <li>• Redesigned and 3D modeled a military litter to pass a helicopter crash-test with Solidworks</li>
+                                    <li>• Built a prototype to monitor the deflection of a Humvee tire and developed tests to
+                                        assess its functionality
+                                    </li>
+                                    <li>• Created carbon fiber prepreg and prepared curing cycles to enhance desired material
+                                        properties
+                                    </li>
+                                </ul>
+
+
+                            </div>
+                            <div class="card-action">
+                                <p>May 2014 - August 2014</p>
+                                <!-- <a href="#">This is a link</a> -->
+                            </div>
+                        </div>
+                    </div>
+
+
 
 
 
                     <!-- University of Texas Research-->
-                    <!-- <div class="cardFlex"> -->
-                    <div class="card">
-                        <div class="card-content">
+                    <div data-aos="flip-up">
+                        <div class="card">
+                            <div class="card-content">
 
-                            <div class="flexCardTop row hide-on-small-only">
+                                <div class="flexCardTop row hide-on-small-only">
 
-                                <img class="brandLogo" src="https://media.licdn.com/dms/image/C4E0BAQEd7gpnLpqU8w/company-logo_400_400/0?e=2131920000&v=beta&t=SPmd0ZsQkySTdLrk1rRuWJy58GGRuW3BMIhgBDMnv3E"
-                                    alt="UT">
+                                    <img class="brandLogo" src="https://media.licdn.com/dms/image/C4E0BAQEd7gpnLpqU8w/company-logo_400_400/0?e=2131920000&v=beta&t=SPmd0ZsQkySTdLrk1rRuWJy58GGRuW3BMIhgBDMnv3E"
+                                        alt="UT">
 
-                                <section class="cardtitleSpacing">
-                                    <div class="cardJobTitle">Research Assistant</div>
-                                    <div class="cardBusinessTitle">The University of Texas at Austin</div>
-                                </section>
-
-                            </div>
-
-
-                            <div class="hide-on-med-and-up">
-                                <div class="row maxWidth">
-                                    <div class="col s12 d-flex justify-content-center">
-                                        <img class="brandLogo" src="https://media.licdn.com/dms/image/C4E0BAQEd7gpnLpqU8w/company-logo_400_400/0?e=2131920000&v=beta&t=SPmd0ZsQkySTdLrk1rRuWJy58GGRuW3BMIhgBDMnv3E"
-                                            alt="UT">
-                                    </div>
-                                    <div class="col s12 d-flex justify-content-center">
+                                    <section class="cardtitleSpacing">
+                                        <div class="cardJobTitle">Research Assistant</div>
                                         <div class="cardBusinessTitle">The University of Texas at Austin</div>
-                                    </div>
+                                    </section>
+
                                 </div>
-                                <div class="cardJobTitle">Research Assistant</div>
+
+
+                                <div class="hide-on-med-and-up">
+                                    <div class="row maxWidth">
+                                        <div class="col s12 d-flex justify-content-center">
+                                            <img class="brandLogo" src="https://media.licdn.com/dms/image/C4E0BAQEd7gpnLpqU8w/company-logo_400_400/0?e=2131920000&v=beta&t=SPmd0ZsQkySTdLrk1rRuWJy58GGRuW3BMIhgBDMnv3E"
+                                                alt="UT">
+                                        </div>
+                                        <div class="col s12 d-flex justify-content-center">
+                                            <div class="cardBusinessTitle">The University of Texas at Austin</div>
+                                        </div>
+                                    </div>
+                                    <div class="cardJobTitle">Research Assistant</div>
+                                </div>
+
+                                <ul style="list-style-type:disc">
+                                    <li>• Fabricated ablative polymer nanocomposites and tested their thermal stability via Thermogrimetric
+                                        analysis (TGA)</li>
+                                    <li>• Performed ablation testing on Thermal Protection Systems (TPS) and work with NASA engineers
+                                        on characterizing those materials</li>
+                                    <li>• Subjected posttest ablatives to compression and shear strength testing</li>
+                                    <li>• Worked with NASA engineers on ablative Thermal Protection System (TPS) research</li>
+                                </ul>
+
+
                             </div>
-
-                            <!-- <span class="card-title">Cognitive Business Transformations Consultant</span> -->
-                            <ul style="list-style-type:disc">
-                                <li>• Fabricated ablative polymer nanocomposites and tested their thermal stability via Thermogrimetric
-                                    analysis (TGA)</li>
-                                <li>• Performed ablation testing on Thermal Protection Systems (TPS) and work with NASA engineers
-                                    on characterizing those materials</li>
-                                <li>• Subjected posttest ablatives to compression and shear strength testing</li>
-                                <li>• Worked with NASA engineers on ablative Thermal Protection System (TPS) research</li>
-                            </ul>
-
-
-                        </div>
-                        <div class="card-action">
-                            <p>May 2015 - December 2016</p>
-                            <!-- <a href="#">This is a link</a> -->
+                            <div class="card-action">
+                                <p>May 2015 - December 2016</p>
+                                <!-- <a href="#">This is a link</a> -->
+                            </div>
                         </div>
                     </div>
-                </div>
 
             </section>
 
             <section id="projects" class="scrollspy">
-                <section id="projectsTitleBackground" class="white-text pageTitleBackground">
+                <section id="" class="white-text pageTitleBackground projectsColor">
                     <h3 class="subTitle">Projects</h3>
                 </section>
 
                 <!-- Jake Lewis Photography -->
                 <div class="container">
-                    <div class="row">
-                        <div class="col s12 m6 l4 cardMargin">
-                            <div class="card medium">
-                                <div class="cardImg card-image waves-effect waves-block waves-light">
-                                    <img class="activator fullHeight" src="camera.jpg" alt="camera">
+
+                    <div data-aos="fade-right">
+                        <div class="row">
+                            <div class="col s12 m6 l4 cardMargin">
+                                <div class="card medium">
+                                    <div class="cardImg card-image waves-effect waves-block waves-light">
+                                        <img class="activator fullHeight" src="static/camera.jpg" alt="camera">
+                                    </div>
+
+
+                                    <div class="card-content">
+                                        <span class="card-title activator teal-text">Jake Lewis Photography</span>
+
+                                        <p>A website that fetches the Flickr API to showcase my previously taken photos and
+                                            my web development abilities.
+                                        </p>
+                                    </div>
+
+                                    <div class="card-action">
+                                        <a href="http://jakelewis-photography.surge.sh/">Jake Lewis Photography</a>
+                                    </div>
+
+                                    <div class="card-reveal">
+                                        <span class="card-title grey-text text-darken-4">
+                                            <span class="brown-text">Technical Properties</span>
+                                            <i class="material-icons right">close</i>
+                                        </span>
+                                        <ul>
+                                            <li>
+                                                <b>• Vanilla JavaScript</b> (no framework)
+                                            </li>
+
+                                            <li>
+                                                <b>• Materialize CSS</b> frontend
+                                            </li>
+
+                                            <li>
+                                                <b>• Fetched Flickr API</b> via AJAX
+                                            </li>
+
+                                        </ul>
+
+                                    </div>
+
                                 </div>
-
-
-                                <div class="card-content">
-                                    <span class="card-title activator teal-text">Jake Lewis Photography</span>
-
-                                    <p>A website that fetches the Flickr API to showcase my previously taken photos and my web
-                                        development abilities.
-                                    </p>
-                                </div>
-
-                                <div class="card-action">
-                                    <a href="http://jakelewis-photography.surge.sh/">Jake Lewis Photography</a>
-                                </div>
-
-                                <div class="card-reveal">
-                                    <span class="card-title grey-text text-darken-4">
-                                        <span class="brown-text">Technical Properties</span>
-                                        <i class="material-icons right">close</i>
-                                    </span>
-                                    <ul>
-                                        <li>
-                                            <b>• Vanilla JavaScript</b> (no framework)
-                                        </li>
-
-                                        <li>
-                                            <b>• Materialize CSS</b> frontend
-                                        </li>
-
-                                        <li>
-                                            <b>• Fetched Flickr API</b> via AJAX
-                                        </li>
-
-                                    </ul>
-
-                                </div>
-
                             </div>
-                        </div>
 
 
-                        <!-- Phlebor App -->
-                        <div class="col s12 m6 l4 cardMargin">
-                            <div class="card medium">
-                                <div class="cardImg card-image waves-effect waves-block waves-light">
-                                    <img class="activator" src="Phlebor_frontpage.png" alt="Phlebor Front Page">
+                            <!-- Phlebor App -->
+                            <div class="col s12 m6 l4 cardMargin">
+                                <div class="card medium">
+                                    <div class="cardImg card-image waves-effect waves-block waves-light">
+                                        <img class="activator" src="static/Phlebor_frontpage.png" alt="Phlebor Front Page">
+                                    </div>
+
+
+                                    <div class="card-content">
+                                        <span class="card-title activator teal-text">Phlebor</span>
+                                        <p>A full-stack CRUD application that allows dehydrated clientele to request a phlebotomist
+                                            to drive to their location and conduct IVs.
+                                        </p>
+                                    </div>
+
+                                    <div class="card-reveal">
+                                        <span class="card-title grey-text text-darken-4">
+                                            <span class="brown-text">Technical Properties</span>
+                                            <i class="material-icons right">close</i>
+                                        </span>
+                                        <ul>
+                                            <li>
+
+                                                <b>• Vanilla JavaScript</b> (no framework)
+                                            </li>
+
+                                            <li>
+                                                <b>• Bootstrap CSS</b> frontend
+                                            </li>
+
+                                            <li>
+                                                <b>• Node.js</b> via AJAX
+                                            </li>
+
+                                            <li>
+                                                <b>• EJS</b>
+                                            </li>
+
+                                        </ul>
+
+                                    </div>
+
+                                    <div class="card-action">
+                                        <a href="https://phlebor.herokuapp.com/">Phlebor</a>
+                                    </div>
+
                                 </div>
-
-
-                                <div class="card-content">
-                                    <span class="card-title activator teal-text">Phlebor</span>
-                                    <p>A full-stack CRUD application that allows dehydrated clientele to request a phlebotomist
-                                        to drive to their location and conduct IVs.
-                                    </p>
-                                </div>
-
-                                <div class="card-reveal">
-                                    <span class="card-title grey-text text-darken-4">
-                                        <span class="brown-text">Technical Properties</span>
-                                        <i class="material-icons right">close</i>
-                                    </span>
-                                    <ul>
-                                        <li>
-
-                                            <b>• Vanilla JavaScript</b> (no framework)
-                                        </li>
-
-                                        <li>
-                                            <b>• Bootstrap CSS</b> frontend
-                                        </li>
-
-                                        <li>
-                                            <b>• Node.js</b> via AJAX
-                                        </li>
-
-                                        <li>
-                                            <b>• EJS</b>
-                                        </li>
-
-                                    </ul>
-
-                                </div>
-
-                                <div class="card-action">
-                                    <a href="https://phlebor.herokuapp.com/">Phlebor</a>
-                                </div>
-
                             </div>
                         </div>
                     </div>
@@ -459,107 +537,280 @@
             </section>
 
             <section id="skills" class="scrollspy">
-                <section id="skillsTitleBackground" class="white-text pageTitleBackground">
+                <section id="" class="white-text pageTitleBackground skillsColor">
                     <h3 class="subTitle">Skills</h3>
+                </section>
+
+                <section class="container">
+
+                    <!-- JavaScript -->
+                    <div data-aos="zoom-in">
+                        <div class="card">
+
+
+                            <div class="card-content">
+                                <h4 class="brown-text">JavaScript</h4>
+
+                                <div class="row card-content">
+
+                                    <div class="col s4 m2 center-align">
+                                        <img class="skillsPicture" src="static/javascript_logo.png" alt="JavaScript">
+                                        <div>JavaScript</div>
+                                    </div>
+
+                                    <div class="col s4 m2 center-align">
+                                        <img class="skillsPicture" src="static/react_logo.png" alt="JavaScript">
+                                        <div>React</div>
+
+                                    </div>
+
+                                    <div class="col s4 m2 center-align">
+                                        <img class="skillsPicture" src="static/EJS_logo.png" alt="JavaScript">
+                                        <div>Embeded JavaScript</div>
+                                    </div>
+
+                                    <div class="col s4 m2 center-align">
+                                        <img class="skillsPicture" src="static/jquery_logo.png" alt="JavaScript">
+                                        <div>jQuery</div>
+                                    </div>
+
+                                    <div class="col s4 m2 center-align">
+                                        <img class="skillsPicture" src="static/knex_logo.png" alt="JavaScript">
+                                        <div>Knex</div>
+                                    </div>
+
+                                    <div class="col s4 m2 center-align">
+                                        <img class="skillsPicture" src="static/AJAX_logo.png" alt="JavaScript">
+                                        <div>AJAX</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CSS -->
+                    <div data-aos="zoom-in">
+                        <div class="card">
+                            <div class="card-content">
+
+                                <h4 class="brown-text">CSS</h4>
+
+                                <div class="row card-content">
+
+                                    <div class="col s4 m2 center-align">
+                                        <img class="skillsPicture" src="static/CSS_logo.png" alt="JavaScript">
+                                        <div>CSS</div>
+
+                                    </div>
+
+                                    <div class="col s4 m2 center-align">
+                                        <img class="skillsPicture" src="static/materialize_logo.svg" alt="JavaScript">
+                                        <div>Materialize</div>
+                                    </div>
+
+                                    <div class="col s4 m2 center-align">
+                                        <img class="skillsPicture" src="static/bootstrap_logo.png" alt="JavaScript">
+                                        <div>Boostrap</div>
+                                    </div>
+
+                                    <div class="col s4 m2 center-align">
+                                        <img class="skillsPicture" src="static/skeleton_logo.jpg" alt="JavaScript">
+                                        <div>Skeleton</div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Back-End -->
+                    <div data-aos="zoom-in">
+                        <div class="card">
+                            <div class="card-content">
+                                <h4 class="brown-text">Back-End</h4>
+                                <div class="row card-content">
+
+                                    <div class="col s4 m2 center-align">
+                                        <img class="skillsPicture" src="static/node_logo.png" alt="JavaScript">
+                                        <div>Node.js</div>
+                                    </div>
+
+                                    <div class="col s4 m2 center-align">
+                                        <img class="skillsPicture" src="static/postgresql_logo.png" alt="JavaScript">
+                                        <div>PostgreSQL</div>
+                                    </div>
+
+                                    <div class="col s4 m2 center-align">
+                                        <img class="skillsPicture" src="static/SQL_logo.png" alt="JavaScript">
+                                        <div>SQL</div>
+                                    </div>
+
+                                    <div class="col s4 m2 center-align">
+                                        <img class="skillsPicture" src="static/express_logo.png" alt="JavaScript">
+                                        <div>Express</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Skills -->
+                    <div data-aos="zoom-in">
+                        <div class="card">
+                            <div class="card-content">
+                                <h4 class="brown-text">Additional Skills</h4>
+                                <div class="row card-content">
+
+                                    <div class="col s4 m2 center-align">
+                                        <img class="skillsPicture" src="static/python_logo.png" alt="JavaScript">
+                                        <div>Python</div>
+                                    </div>
+
+                                    <div class="col s4 m2 center-align">
+                                        <img class="skillsPicture" src="static/R_logo.svg" alt="JavaScript">
+                                        <div>R</div>
+                                    </div>
+
+                                    <div class="col s4 m2 center-align">
+                                        <img class="skillsPicture" src="static/github_logo.png" alt="JavaScript">
+                                        <div>GitHub</div>
+                                    </div>
+
+                                    <div class="col s4 m2 center-align">
+                                        <img class="skillsPicture" src="static/heroku_logo.png" alt="JavaScript">
+                                        <div>Heroku</div>
+                                    </div>
+
+                                    <div class="col s4 m2 center-align">
+                                        <img class="skillsPicture" src="static/photoshop_logo.png" alt="JavaScript">
+                                        <div>Adobe Photoshop</div>
+                                    </div>
+
+                                    <div class="col s4 m2 center-align">
+                                        <img class="skillsPicture" src="static/solidworks_logo.png" alt="JavaScript">
+                                        <div>SolidWorks</div>
+                                    </div>
+
+                                    <div class="col s4 m2 center-align">
+                                        <img class="skillsPicture" src="static/COMSOL_logo.jpg" alt="JavaScript">
+                                        <div>COMSOL</div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
 
             </section>
 
             <section id="awards" class="scrollspy">
-                <section id="awardsTitleBackground" class="white-text pageTitleBackground">
+                <section id="" class="white-text pageTitleBackground awardsColor">
                     <h3 class="subTitle">Awards</h3>
                 </section>
 
             </section>
 
             <section id="education" class="scrollspy">
-                <section id="educationTitleBackground" class="white-text pageTitleBackground">
+                <section id="" class="white-text pageTitleBackground educationColor">
                     <h3 class="subTitle">Education</h3>
                 </section>
 
 
                 <div class="container">
+                    
                     <!--Galvanize-->
                     <div class="card">
-                        <div class="card-content">
-                            <div class="flexEducationTitle">
-                                <img class="brandLogo hide-on-small-only" src="https://media.licdn.com/dms/image/C4E0BAQG1D1RHEvbQZQ/company-logo_400_400/0?e=1541030400&v=beta&t=V2AIcy5Djs2rLFVFpQl-vTMas0UOqiZAVqCVvDYFI7w"
-                                    alt="Galvanize">
+                        <div class="card-content d-flex align-items-center">
+                            <div class="row maxWidth m-0">
+                                <div class="col m2 s12 center-align">
+                                    <img class="brandLogo responsive-img" src="https://media.licdn.com/dms/image/C4E0BAQG1D1RHEvbQZQ/company-logo_400_400/0?e=1541030400&v=beta&t=V2AIcy5Djs2rLFVFpQl-vTMas0UOqiZAVqCVvDYFI7w"
+                                        alt="Galvanize">
+                                </div>
 
-                                <section class="cardtitleSpacing">
-                                    <div class="cardJobTitle">Galvanize</div>
-                                    <div class="cardBusinessTitle">Certification in Full-Stack Development</div>
-                                    <p>2018</p>
-                                </section>
 
+                                <div class="col m10 s12">
+                                    <section class="cardtitleSpacing">
+                                        <div class="cardJobTitle hide-on-small-only">Galvanize</div>
+                                        <div class="cardJobTitle educationCards center-align hide-on-med-and-up">Galvanize</div>
+                                        <div class="cardBusinessTitle brown-text">Certification in Full-Stack Development</div>
+                                        <p>2018</p>
+                                    </section>
+                                </div>
                             </div>
-
                         </div>
                     </div>
 
                     <!--The University of Texas-->
                     <div class="card">
-                        <div class="card-content">
-                            <div class="flexEducationTitle">
+                        <div class="card-content d-flex align-items-center">
+                            <div class="row maxWidth m-0">
 
-                                <img class="brandLogo hide-on-small-only" src="https://media.licdn.com/dms/image/C4E0BAQEd7gpnLpqU8w/company-logo_400_400/0?e=2128291200&v=beta&t=ky-u1fAflH9ZGmKB1DVJVE7y8FwdTHMCLJpa1YyE568"
-                                    alt="University of Texas">
+                                <div class="col m2 s12 center-align">
+                                    <img class="brandLogo responsive-img" src="https://media.licdn.com/dms/image/C4E0BAQEd7gpnLpqU8w/company-logo_400_400/0?e=2128291200&v=beta&t=ky-u1fAflH9ZGmKB1DVJVE7y8FwdTHMCLJpa1YyE568"
+                                        alt="Univerity of Texas">
+                                </div>
 
-                                <section class="cardtitleSpacing">
-                                    <div class="cardJobTitle">The University of Texas at Austin</div>
-                                    <div class="cardBusinessTitle">Bachelor of Science (B.S.), Mechanical Engineering, 3.62</div>
-                                    <p>2012 - 2016</p>
-                                </section>
+                                <div class="col m10 s12">
+                                    <section class="cardtitleSpacing">
+                                        <div class="cardJobTitle hide-on-small-only">The University of Texas at Austin</div>
+                                        <div class="cardJobTitle educationCards center-align hide-on-med-and-up">The University of Texas at Austin</div>
+                                        <div class="cardBusinessTitle brown-text">Bachelor of Science (B.S.), Mechanical Engineering, 3.62</div>
+                                        <p>2012 - 2016</p>
+                                    </section>
+                                </div>
 
                             </div>
-
                         </div>
                     </div>
 
 
                     <!--Louisiana State University-->
-                    <!-- <div class="cardFlex"> -->
                     <div class="card">
-                        <div class="card-content">
-                            <div class="flexEducationTitle">
-                                <img class="brandLogo hide-on-small-only" src="https://media.licdn.com/dms/image/C4E0BAQE_rxdFlHND6A/company-logo_400_400/0?e=2131920000&v=beta&t=7wst3CByBSSc1lU5PYhv_-CnPWZJDGxA0bcmcUECJ04"
-                                    alt="Louisiana State University">
+                        <div class="card-content d-flex align-items-center">
+                            <div class="row maxWidth m-0">
+                                <div class="col m2 s12 center-align">
+                                    <img class="brandLogo responsive-img" src="https://media.licdn.com/dms/image/C4E0BAQE_rxdFlHND6A/company-logo_400_400/0?e=2131920000&v=beta&t=7wst3CByBSSc1lU5PYhv_-CnPWZJDGxA0bcmcUECJ04"
+                                        alt="Louisiana State University">
+                                </div>
 
-                                <section class="cardtitleSpacing">
-                                    <div class="cardJobTitle">Louisiana State Univeristy</div>
-                                    <div class="cardBusinessTitle">Bachelor of Science (B.S.), Mechanical Engineering, 3.58</div>
-                                    <p>2011 - 2012</p>
-                                </section>
+                                <div class="col m10 s12">
 
+                                    <section class="cardtitleSpacing">
+                                        <div class="cardJobTitle hide-on-small-only">Louisiana State University</div>
+                                        <div class="cardJobTitle educationCards center-align hide-on-med-and-up">Louisiana State Univeristy</div>
+                                        <div class="cardBusinessTitle brown-text">Bachelor of Science (B.S.), Mechanical Engineering, 3.62</div>
+                                        <p>2011 - 2012</p>
+                                    </section>
+                                </div>
                             </div>
-
                         </div>
                     </div>
-
-
-
-
                 </div>
 
 
             </section>
 
             <section id="contact" class="scrollspy">
-                <section id="contactTitleBackground" class="white-text pageTitleBackground">
+                <section id="" class="white-text pageTitleBackground contactColor">
                     <h3 class="subTitle">Contact</h3>
                 </section>
 
             </section>
 
             <section id="resume" class="scrollspy">
-                <section id="resumeTitleBackground" class="white-text pageTitleBackground">
+                <section id="" class="white-text pageTitleBackground resumeColor">
                     <h3 class="subTitle">Resume</h3>
                 </section>
 
             </section>
 
         </main>
-    </div>
+        </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>

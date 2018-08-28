@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     sideNavInstances();
     createOverlay();
     scrollSpyInstances();
+    AOS.init();
 
     let button = document.getElementById('hamburgerButton');
     let sidebar = document.getElementById('sidebar');
