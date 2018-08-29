@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,6 +23,7 @@
     "fs": "0.0.1-security",
     "heroku": "^7.12.5",
     "knex": "^0.15.2",
+    "method-override": "^3.0.0",
     "morgan": "^1.9.0",
     "pg": "^7.4.3"
   }
