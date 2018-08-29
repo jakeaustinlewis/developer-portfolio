@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     sideNavInstances();
     createOverlay();
     scrollSpyInstances();
+    toolTipInstances();
     AOS.init();
 
     let button = document.getElementById('hamburgerButton');
@@ -39,6 +40,16 @@ document.addEventListener('DOMContentLoaded', function () {
         };
         let sideNavInstances = M.Sidenav.init(sideNavElems, sideNavOptions);
     }
+
+    function toolTipInstances() {
+        let toolTipElems = document.querySelectorAll('.tooltipped');
+        let toolTipOptions = {
+            position: 'top',
+            
+        };
+        let toolTipInstances = M.Tooltip.init(toolTipElems, toolTipOptions);
+    }
+
     let navBottom=document.getElementById("navBottom");
 
 
