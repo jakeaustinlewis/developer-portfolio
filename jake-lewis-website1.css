@@ -1,27 +1,28 @@
+html {
+  height: 100%;
+}
+
 body {
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222;
 }
 
 /* Larger than mobile */
-
 @media (min-width: 400px) {}
 
 /* Larger than phablet (also point when grid becomes active) */
-
 @media (min-width: 550px) {}
 
 /* Larger than tablet */
-
 @media (min-width: 750px) {}
 
 /* Larger than desktop */
-
 @media (min-width: 1000px) {}
 
 /* Larger than Desktop HD */
-
 @media (min-width: 1200px) {}
+
+
 
 * {
   margin: 0px;
@@ -34,26 +35,25 @@ body {
   height: 100%;
 }
 
-.table-of-contents li{
-  padding:0px;
+.table-of-contents li {
+  padding: 0px;
 }
 
-.maxWidth{
+.maxWidth {
   width: 100%;
 }
 
 .maxHeight {
-  height:100%;
+  height: 100%;
 }
-.m-0{
+
+.m-0 {
   margin: 0px;
 }
 
 .d-flex {
   display: flex;
 }
-
-
 
 .justify-content-center {
   justify-content: center;
@@ -91,8 +91,7 @@ nav {
   margin: auto auto;
 }
 
-
-#nameContainer .name{
+#nameContainer .name {
   font-size: 24px;
 }
 
@@ -104,7 +103,6 @@ nav {
 nav ul li {
   float: none;
 }
-
 
 .divider {
   height: 1px;
@@ -124,9 +122,8 @@ nav ul li {
   margin: 0px 0px 10px 0px;
 }
 
-
 .educationCards {
-  border-bottom:1px solid #ddd;
+  border-bottom: 1px solid #ddd;
   padding-bottom: 10px;
   margin: 0px 0px 10px 0px;
 }
@@ -134,11 +131,20 @@ nav ul li {
 .card {
   margin-bottom: 50px;
 }
+
 .cardJobTitle {
-  font-size:1.25rem;
+  font-size: 1.25rem;
   font-weight: bold;
   margin-bottom: 10px;
   /* width: 100%; */
+}
+
+@media (min-width: 600px) {
+  main {
+    height: 100%;
+    margin-left: 200px;
+    background-color: #f3f6fa;
+  }
 }
 
 @media (min-width: 768px) {
@@ -158,10 +164,10 @@ nav ul li {
   .parallax {
     /* Set a specific height */
     /* min-height: 300px;  */
-
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
   }
+
   #pictureNoteContainer h2 {
     font-size: 3.56rem;
   }
@@ -174,7 +180,6 @@ nav ul li {
 }
 
 @media (min-width: 992px) {
-
   #experience .container {
     max-width: 815px;
   }
@@ -182,12 +187,7 @@ nav ul li {
   #education .container {
     max-width: 815px;
   }
-
-
 }
-
-
-
 
 .fullWidth {
   width: 100%;
@@ -200,7 +200,6 @@ nav ul li {
 /* .minWidth {
   width: 170px;
 } */
-
 .card .card-action {
   background-color: inherit;
   border-top: 1px solid rgba(160, 160, 160, 0.2);
@@ -209,20 +208,20 @@ nav ul li {
   height: auto;
 }
 
-/* #slide-out { */
-  /* width: 190px; */
-  /* height: 100%;
+#slide-out {
+  width: 200px;
+  height: 100%;
   z-index: 1;
   margin: 0px;
   padding: 0px;
-} */
-.row .col {
-  padding: 0px;
 }
-.cardMargin {
-    margin-right: 1.5rem;
-    padding: 0 .75rem;
 
+/* .row .col {
+  padding: 0px;
+} */
+.cardMargin {
+  margin-right: 1.5rem;
+  padding: 0 .75rem;
 }
 
 .user-view>div {
@@ -242,7 +241,6 @@ nav ul li {
 .teal-text {
   color: #009688;
 }
-
 
 .brown-text {
   color: #33241c;
@@ -271,8 +269,6 @@ nav ul li {
 #navBottom a.active {
   background-color: #fafafa;
 }
-
-
 
 #navBottom i {
   padding: 0px 15px;
@@ -418,10 +414,10 @@ nav ul li {
   left: -200px;
   /* overflow-x: hidden; */
   transition: 0.5s;
-} 
+}
 
 .slideOut {
-  width: 190px; 
+  width: 200px;
   height: 100%;
   position: fixed;
   z-index: 1;
@@ -434,23 +430,18 @@ nav ul li {
 }
 
 .slideOut a {
-  width: 190px; 
+  width: 200px;
   left: 0px;
   overflow-x: hidden;
   transition: 0.3s;
-  
 }
 
 .slideOut li {
-  width: 190px; 
+  width: 200px;
   left: 0px;
   overflow-x: hidden;
   transition: 0.3s;
 }
-
-
-
-
 
 #pictureNoteContainer {
   padding: 22.5px 22.5px;
@@ -555,6 +546,7 @@ nav ul li {
 
 .skillsPicture {
   max-width: 100%;
+  min-width: 60px;
   height: 125px;
   object-fit: contain;
   padding: 10px;
@@ -567,15 +559,14 @@ nav ul li {
 }
 
 .skillsPicture:hover {
-  transform: scale(1.5);/* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.5);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
-
 
 /* #experience span {
   width: 100px;
   height: 100px;
 } */
-
 .cardFlex {
   display: flex;
   justify-content: center;
@@ -587,19 +578,17 @@ nav ul li {
 /* .card.medium {
   width: 400px;
 } */
-
-.margin0{
-  margin:0px;
+.margin0 {
+  margin: 0px;
 }
-
 
 /* .cardImg {
   object-fit: cover;
 } */
-
 .card.medium {
   width: 100%;
 }
+
 .card.medium .card-image {
   height: 240px;
   width: auto;
@@ -610,10 +599,12 @@ nav ul li {
   height: 400px;
   line-height: 400px;
 }
+
 .cardImgg img {
   max-width: 100%;
-  max-height:100%;
-  display: inline-block; /* Instead of display: block; */
+  max-height: 100%;
+  display: inline-block;
+  /* Instead of display: block; */
   margin: 0 auto;
   vertical-align: middle;
 }
@@ -630,7 +621,6 @@ nav ul li {
   .card {
     width: 100%;
   }
-
 }
 
 .flexCardTop {
@@ -654,16 +644,10 @@ nav ul li {
   ;
 }
 
-#pushRight {
-  width: 190px;
-  height: 100%;
-  position: relative;
-  display: block;
-  z-index: 2;
-}
 
 main {
-  margin-left: 190px;
+  height: 100%;
+  /* margin-left: 190px; */
   background-color: #f3f6fa;
 }
 
