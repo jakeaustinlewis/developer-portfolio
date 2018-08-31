@@ -49,8 +49,19 @@ body {
   font-size: 1.75rem;
 }
 
+.contactContainer {
+  width: 400px;
+  font-size: 1.25rem;
+
+}
+
 .p-0 {
   padding: 0px;
+}
+
+
+.m-auto {
+  margin: auto auto;
 }
 
 .m-0 {
@@ -121,8 +132,30 @@ body {
   display: flex;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
+
 .justify-content-center {
   justify-content: center;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.justify-content-space-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-content-space-around {
+  justify-content: space-around;
+}
+
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .align-items-center {
