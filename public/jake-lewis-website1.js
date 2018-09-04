@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
-    sideNavInstances();
+    
     createOverlay();
     scrollSpyInstances();
     toolTipInstances();
+    sideNavInstances();
     AOS.init();
 
     let button = document.getElementById('hamburgerButton');
