@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             main.addEventListener('click', (e) => {
                 sidebar.className = 'slideIn';
+                
             })
         }
     });

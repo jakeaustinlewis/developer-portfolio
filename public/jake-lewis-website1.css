@@ -219,7 +219,8 @@ body {
 }
 
 #pictureNoteContainer h2 {
-  font-size: 22px;
+  font-size: 38px;
+  margin-top: 50px;
 }
 
 nav {
@@ -227,6 +228,16 @@ nav {
   box-shadow: none;
   height: 0;
 }
+
+.nameColor {
+  background-color: white;
+  height: 55px;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+}
+
+
 
 #nameContainer {
   margin: auto auto;
@@ -758,8 +769,20 @@ nav ul li {
   margin-left: 25px;
 }
 
+.nameTitle {
+  font-size: 22px;
+}
+
+.widthFix {
+  width: 31px;
+}
+
+mobileNav {
+  position: fixed;
+}
+
 .subTitle {
-  margin: 0px 0px 0px 40px;
+  z-index: 101;
 }
 
 .brandLogo {
