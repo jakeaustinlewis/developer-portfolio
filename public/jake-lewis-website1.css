@@ -481,6 +481,33 @@ nav ul li {
   color: #33241c;
 }
 
+.navBottom a {
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  /* font-weight: 300; */
+  display: flex;
+  align-items: center;
+  padding-left: 0px;
+  /* border: 0px; */
+}
+
+.navBottom a:hover {
+  background-color: #fafafa;
+}
+
+.navBottom a.active {
+  background-color: #fafafa;
+}
+
+.navBottom i {
+  padding: 0px 15px;
+}
+
+.navBottom span {
+  margin-left: 10px;
+}
+
 #navBottom {
   background-color: #fff;
   /* height: 100%; */
@@ -661,7 +688,7 @@ nav ul li {
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
-  background-color: black;
+  background-color: white;
 }
 
 .slideOut a {
