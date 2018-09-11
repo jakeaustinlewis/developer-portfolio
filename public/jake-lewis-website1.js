@@ -18,10 +18,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (sidebar.className == 'slideIn z-depth-2') {
             sidebar.className = 'slideOut z-depth-2';
-            console.log('click');
 
             main.addEventListener('click', (e) => {
                 sidebar.className = 'slideIn z-depth-2';
+
+                
                 
             })
         }
@@ -30,8 +31,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function scrollSpyInstances() {
         let scrollSpyElements = document.querySelectorAll('.scrollspy');
+        let distance = 0;
+        if(window.innerWidth<=600){
+            distance = 55;
+        }
+
         let scrollSpyOptions = {
-            scrollOffset: 0
+            scrollOffset: distance
         };
         let scrollSpyInstances = M.ScrollSpy.init(scrollSpyElements, scrollSpyOptions);
     }
