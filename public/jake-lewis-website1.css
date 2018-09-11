@@ -39,14 +39,21 @@ body {
   padding: 0px;
 }
 
-.table-of-contents a:hover {
+.padding a:active{
+  padding-left: 0px;
+
+}
+/* .table-of-contents a:hover {
+  padding-left: 0px;
+} */
+
+/* .table-of-contents a:active {
+  padding-left: 0px;
+} */
+
+.table-of-contents {
   padding: 0px;
 }
-
-.table-of-contents a:active {
-  padding: 0px;
-}
-
 
 .maxWidth {
   width: 100%;
@@ -245,8 +252,6 @@ nav {
   z-index: 99;
   width: 100%;
 }
-
-
 
 #nameContainer {
   margin: auto auto;
@@ -503,10 +508,13 @@ nav ul li {
 
 .navBottom a:hover {
   background-color: #fafafa;
+  padding-left: 0px;
+
 }
 
 .navBottom a.active {
   background-color: #fafafa;
+  padding-left: 0px;
 }
 
 .navBottom i {
@@ -514,38 +522,6 @@ nav ul li {
 }
 
 .navBottom span {
-  margin-left: 10px;
-}
-
-#navBottom {
-  background-color: #fff;
-  /* height: 100%; */
-}
-
-#navBottom a {
-  width: 100%;
-  height: 40px;
-  font-size: 16px;
-  /* font-weight: 300; */
-  display: flex;
-  align-items: center;
-  padding-left: 0px;
-  /* border: 0px; */
-}
-
-#navBottom a:hover {
-  background-color: #fafafa;
-}
-
-#navBottom a.active {
-  background-color: #fafafa;
-}
-
-#navBottom i {
-  padding: 0px 15px;
-}
-
-#navBottom span {
   margin-left: 10px;
 }
 
@@ -730,8 +706,6 @@ nav ul li {
   align-items: center;
 }
 
-
-
 @media screen and (max-width: 992px) {
   .pageTitleBackground {
     height: 84px;
@@ -868,28 +842,15 @@ mobileNav {
   /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
-/* #experience span {
-  width: 100px;
-  height: 100px;
-} */
 .cardFlex {
   display: flex;
   justify-content: center;
 }
 
-/* .card {
-  width: 815px;
-} */
-/* .card.medium {
-  width: 400px;
-} */
 .margin0 {
   margin: 0px;
 }
 
-/* .cardImg {
-  object-fit: cover;
-} */
 .card.medium {
   width: 100%;
 }
@@ -944,28 +905,15 @@ mobileNav {
 
 .cardBusinessTitle {
   font-size: 20px;
-  /* text-decoration: underline;
-  text-decoration-color: #02bcd7; */
-  ;
 }
 
 main {
   height: 100%;
-  /* margin-left: 190px; */
   background-color: #f3f6fa;
 }
 
 @media screen and (max-width: 992px) {
   background-color: #f3f6fa;
-}
-
-#form-container {
-  display: flex;
-  justify-content: center;
-  margin: 30px 0px;
-  font-size: 16px;
-  justify-content: space-between;
-  width: 100%;
 }
 
 .email {
@@ -982,20 +930,4 @@ main {
 
 .red {
   color: #e31a6d;
-}
-
-.box {
-  width: 10%;
-  height: 10%;
-  /* border: .02px solid rgba(211,211,211,5); */
-}
-
-#box-container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  /* grid-gap: 20px; */
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-wrap: wrap;
 }
