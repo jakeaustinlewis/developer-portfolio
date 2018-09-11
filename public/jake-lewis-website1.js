@@ -16,12 +16,12 @@ document.addEventListener('DOMContentLoaded', function () {
         e.preventDefault();
         
 
-        if (sidebar.className == 'slideIn') {
-            sidebar.className = 'slideOut';
+        if (sidebar.className == 'slideIn z-depth-2') {
+            sidebar.className = 'slideOut z-depth-2';
             console.log('click');
 
             main.addEventListener('click', (e) => {
-                sidebar.className = 'slideIn';
+                sidebar.className = 'slideIn z-depth-2';
                 
             })
         }
