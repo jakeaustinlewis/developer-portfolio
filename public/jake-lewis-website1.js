@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    createOverlay();
+    // createOverlay();
     scrollSpyInstances();
     toolTipInstances();
     sideNavInstances();
@@ -18,9 +18,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (sidebar.className == 'slideIn z-depth-2') {
             sidebar.className = 'slideOut z-depth-2';
+            
 
             main.addEventListener('click', (e) => {
-                sidebar.className = 'slideIn z-depth-2';                
+                sidebar.className = 'slideIn z-depth-2';
+                              
             })
         }
     });
