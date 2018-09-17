@@ -3,7 +3,7 @@
 let express = require('express');
 let path = require('path');
 let app = express();
-let port = process.env.PORT || 8000;
+let port = process.env.PORT || 3000;
 
 let methodOverride = require('method-override');
 
@@ -12,7 +12,7 @@ let bodyParser = require('body-parser');
 
 
 
-let index = require('./routes/');
+let index = require('./routes/index');
 
 app.disable('x-powered-by'); //Sets the Boolean setting name to false
 // app.use(express.static('public'));

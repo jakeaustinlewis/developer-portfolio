@@ -39,10 +39,11 @@ body {
   padding: 0px;
 }
 
-.padding a:active{
+.padding a:active {
   padding-left: 0px;
 
 }
+
 /* .table-of-contents a:hover {
   padding-left: 0px;
 } */
@@ -68,7 +69,6 @@ body {
 }
 
 .contactContainer {
-  width: 400px;
   font-size: 1.25rem;
 
 }
@@ -234,10 +234,6 @@ body {
   background-position-x: 71%;
 }
 
-#pictureNoteContainer h2 {
-  font-size: 38px;
-  margin-top: 50px;
-}
 
 nav {
   background: white;
@@ -303,6 +299,7 @@ nav ul li {
   font-weight: bold;
   margin-bottom: 10px;
 }
+
 .cardBusinessTitle {
   font-size: 1.25rem;
 }
@@ -311,7 +308,7 @@ nav ul li {
   height: 700px;
 }
 
-.lineMiddle { 
+.lineMiddle {
   position: relative;
   margin-top: 3rem;
 }
@@ -321,24 +318,29 @@ nav ul li {
   font-weight: 700;
 }
 
-.lineMiddle:after { 
+.lineMiddle:after {
   content: '';
   position: absolute;
   border-bottom: 5px #009588 solid;
   height: 100%;
   transform: translateX(30%);
   width: 23%;
-  top:-50%;
+  top: -50%;
 }
 
-.lineMiddle:before { 
+.lineMiddle:before {
   content: '';
   position: absolute;
   border-bottom: 5px #009588 solid;
   height: 100%;
   transform: translateX(-130%);
   width: 23%;
-  top:-50%;
+  top: -50%;
+}
+
+#pictureNoteContainer h2 {
+  font-size: 3.56rem;
+  margin-top: 50px;
 }
 
 @media (min-width: 600px) {
@@ -353,6 +355,10 @@ nav ul li {
   #aboutMe h2 {
     font-size: 40px;
   }
+  #pictureNoteContainer h2 {
+    font-size: 3.56rem;
+    margin-top: 0px;
+  }
 
   #backgroundPicture {
     background-image: url("static/linkedInPicture.jpg");
@@ -365,10 +371,6 @@ nav ul li {
 
   .parallax {
     background-attachment: fixed;
-  }
-
-  #pictureNoteContainer h2 {
-    font-size: 3.56rem;
   }
 
   .cardJobTitle {
@@ -432,16 +434,25 @@ nav ul li {
 
 /* The side navigation menu */
 .sidenav {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
   left: 0;
-  background-color: #111; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  background-color: #111;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
 }
 
 /* The navigation menu links */
@@ -470,8 +481,13 @@ nav ul li {
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
 }
 
 
@@ -779,17 +795,24 @@ nav ul li {
   z-index: 2;
   /* Specify a stack order in case you're using a different order for other elements */
 }
+
 .overlay {
   height: 100%;
   width: 0;
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
   left: 0;
   top: 0;
-  background-color: rgb(0,0,0); /* Black fallback color */
-  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.5s; /*  0.5 second transition effect to slide in or slide down */
+  background-color: rgb(0, 0, 0);
+  /* Black fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/opacity */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  transition: 0.5s;
+  /*  0.5 second transition effect to slide in or slide down */
 }
 
 #aboutMe blockquote {

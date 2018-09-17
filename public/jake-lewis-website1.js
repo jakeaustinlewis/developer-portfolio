@@ -20,10 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
             sidebar.className = 'slideOut z-depth-2';
 
             main.addEventListener('click', (e) => {
-                sidebar.className = 'slideIn z-depth-2';
-
-                
-                
+                sidebar.className = 'slideIn z-depth-2';                
             })
         }
     });
