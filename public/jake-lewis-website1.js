@@ -14,15 +14,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     button.addEventListener('click', (e) => {
         e.preventDefault();
-        
-
         if (sidebar.className == 'slideIn z-depth-2') {
             sidebar.className = 'slideOut z-depth-2';
             
-
             main.addEventListener('click', (e) => {
-                sidebar.className = 'slideIn z-depth-2';
-                              
+                sidebar.className = 'slideIn z-depth-2'; 
             })
         }
     });
@@ -47,7 +43,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     function sideNavInstances() {
-        // var instance = M.Sidenav.getInstance(elem);
         let sideNavElems = document.querySelectorAll('.sidenav');
         let sideNavOptions = {
             draggable: true
