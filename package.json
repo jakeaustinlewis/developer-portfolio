@@ -21,10 +21,10 @@
   "dependencies": {
     "express": "^4.16.3",
     "fs": "0.0.1-security",
-    "heroku": "^7.12.5",
+    "heroku": "^7.22.7",
     "knex": "^0.15.2",
     "method-override": "^3.0.0",
-    "morgan": "^1.9.0",
+    "morgan": "^1.9.1",
     "pg": "^7.4.3"
   },
   "devDependencies": {
