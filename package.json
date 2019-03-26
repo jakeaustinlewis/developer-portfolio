@@ -26,5 +26,8 @@
     "method-override": "^3.0.0",
     "morgan": "^1.9.0",
     "pg": "^7.4.3"
+  },
+  "devDependencies": {
+    "lite-server": "^2.4.0"
   }
 }
